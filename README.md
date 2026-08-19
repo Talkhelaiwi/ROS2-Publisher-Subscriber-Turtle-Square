@@ -19,13 +19,13 @@ The project includes:
 
 ## Part 1: Publisher and Subscriber
 
-The publisher sends the following custom message:
+The Publisher sends a custom message:
 
 ```text
 Smart Methods Task
 ```
 
-The subscriber receives and displays the message:
+The Listener receives and displays the message:
 
 ```text
 I heard: "Smart Methods Task"
@@ -39,9 +39,9 @@ source ~/ros2_ws/install/setup.bash
 ros2 run py_pubsub talker
 ```
 
-### Run the Subscriber
+### Run the Listener
 
-Open another terminal and run:
+Open another terminal:
 
 ```bash
 source /opt/ros/humble/setup.bash
@@ -49,9 +49,15 @@ source ~/ros2_ws/install/setup.bash
 ros2 run py_pubsub listener
 ```
 
+### Publisher & Subscriber Result
+
+![Publisher and Subscriber](Screenshots/Screenshot88.png)
+
 ## Part 2: Turtle Square Movement
 
-The Turtlesim code was modified so that the turtle:
+The Turtlesim code was modified to make the turtle move in a square path instead of a circle.
+
+The turtle:
 
 1. Moves forward.
 2. Turns 90 degrees.
@@ -81,9 +87,9 @@ After completing the square, the terminal displays:
 Square completed!
 ```
 
-## Result
+### Turtle Square Result
 
-The Publisher and Subscriber successfully communicate using a custom message, and the Turtlesim turtle successfully moves in a square path.
+![Turtle Square](Screenshots/photo999.jpg)
 
 ## Project Structure
 
@@ -100,12 +106,19 @@ ros2_ws/
             └── square.py
 ```
 
-## Screenshots
+## Repository Structure
 
-### Publisher and Subscriber
+```text
+README.md
+Screenshots/
+├── Screenshot88.png
+└── photo999.jpg
+```
 
-![Publisher and Subscriber](images/publisher_subscriber.png)
+## Result
 
-### Turtle Square
+The Publisher and Subscriber successfully communicate using a custom message, and the Turtlesim turtle successfully completes a square path.
 
-![Turtle Square](images/turtle_square.png)
+## Author
+
+Turki
